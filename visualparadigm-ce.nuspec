@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>visualparadigm-ce</id>
+    <version>15.1</version>
+    <title>Visual Paradigm CE</title>
+    <authors>Visual Paradigm</authors>
+    <owners>Visual Paradigm</owners>
+    <projectUrl>https://www.visual-paradigm.com/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Visual Paradigm Community Edition</description>
+    <summary>Visual Paradigm Community Edition</summary>
+    <tags>visual paradigm visual-paradigm community edition ce</tags>
+	<iconUrl>https://cdn.visual-paradigm.com/media/vplogo_72.png</iconUrl>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+    <!--Building from Linux? You may need this instead: <file src="tools/**" target="tools" />-->
+  </files>
+</package>
