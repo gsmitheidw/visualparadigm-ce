@@ -8,10 +8,17 @@
     <owners>Visual Paradigm</owners>
     <projectUrl>https://www.visual-paradigm.com/</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Visual Paradigm Community Edition</description>
+	<description>
+	# Visual Paradigmn Community Edition
+
+	Visual Paradigm (VP-UML) is a UML CASE Tool supporting UML 2, SysML and Business Process Modeling Notation (BPMN).
+	CE (Community Edition) is free version for non-commercial use only.
+	</description>
     <summary>Visual Paradigm Community Edition</summary>
+	<licenceUrl>https://www.visual-paradigm.com/aboutus/faq.jsp</licenceUrl>
     <tags>visual paradigm visual-paradigm community edition ce</tags>
 	<iconUrl>https://cdn.visual-paradigm.com/media/vplogo_72.png</iconUrl>
+	<packageSourceUrl>https://github.com/gsmitheidw/visualparadigm-ce</packageSourceUrl>
   </metadata>
   <files>
     <!-- this section controls what actually gets packaged into the Chocolatey package -->
