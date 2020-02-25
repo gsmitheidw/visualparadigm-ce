@@ -15,7 +15,7 @@
 	CE (Community Edition) is free version for non-commercial use only.
 	</description>
     <summary>Visual Paradigm Community Edition</summary>
-	<licenceUrl>https://www.visual-paradigm.com/aboutus/faq.jsp</licenceUrl>
+	<licenseUrl>https://www.visual-paradigm.com/aboutus/faq.jsp</licenseUrl>
     <tags>visual paradigm visual-paradigm community edition ce</tags>
 	<iconUrl>https://cdn.rawgit.com/gsmitheidw/visualparadigm-ce/8df28b64/visualparadigm-icon.png</iconUrl>
 	<packageSourceUrl>https://github.com/gsmitheidw/visualparadigm-ce</packageSourceUrl>
