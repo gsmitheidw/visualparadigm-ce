@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>visualparadigm-ce</id>
-    <version>16.3</version>
+    <version>17.1.20230711</version>
     <title>Visual Paradigm CE</title>
     <authors>Visual Paradigm</authors>
     <owners>Visual Paradigm</owners>
@@ -14,7 +14,7 @@
 	Visual Paradigm (VP-UML) is a UML CASE Tool supporting UML 2, SysML and Business Process Modeling Notation (BPMN).
 	CE (Community Edition) is free version for non-commercial use only.
 	</description>
-    <summary>Visual Paradigm Community Edition</summary>
+    <summary>Visual Paradigm Community Edition 17.1 build 20230711</summary>
 	<licenseUrl>https://www.visual-paradigm.com/aboutus/faq.jsp</licenseUrl>
     <tags>visual paradigm visual-paradigm community edition ce</tags>
 	<iconUrl>https://cdn.rawgit.com/gsmitheidw/visualparadigm-ce/8df28b64/visualparadigm-icon.png</iconUrl>
