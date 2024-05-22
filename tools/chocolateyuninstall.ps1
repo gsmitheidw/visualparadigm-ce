@@ -1,27 +1,34 @@
 $ErrorActionPreference = 'Stop';
 
-[array]$key = Get-UninstallRegistryKey -SoftwareName 'visualparadigm-ce*'
+# Get all uninstall registry keys for visual paradigm
+[array]$keys = Get-UninstallRegistryKey -SoftwareName 'visualparadigm-ce*'
 
-$packageName='visualparadigm-ce'
+$packageName = 'visualparadigm-ce'
 
-if ($key.Count -eq 1) {
+if ($keys.Count -gt 0) {
+    $keys | ForEach-Object {
+        # Get the UninstallString from the registry key
+        $uninstallString = $_.UninstallString
 
-  $key | ForEach-Object {
-  $packageArgs = @{
-    packageName    = $packageName
-    fileType       = 'EXE'
-    silentArgs     = '-q'
-    validExitCodes = @(0)
-    file           = "C:\Program Files\Visual Paradigm CE 17.1\uninstaller\uninstall.exe"
-  }
- Uninstall-ChocolateyPackage @packageArgs
- }
+            # Validate if the executable path exists
+            if (Test-Path ($uninstallString -replace '"', '')) {
+                $packageArgs = @{
+                    packageName    = $packageName
+                    fileType       = 'EXE'
+                    silentArgs     = '-q'
+                    validExitCodes = @(0)
+                    file           = $uninstallString
+                }
 
+                # Uninstall the package
+                Uninstall-ChocolateyPackage @packageArgs
+            } else {
+                Write-Warning "Uninstall executable not found at path: $uninstallString"
+            }
+        
+       } 
+    }
+} else {
+    Write-Warning "No matches found for software name '$packageName'."
 }
-else {
-Write-Warning "$key.Count matches found, aborting multiple copy uninstall!"
-
-}
-
-
 
