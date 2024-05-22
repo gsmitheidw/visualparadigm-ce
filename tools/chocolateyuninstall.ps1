@@ -12,7 +12,7 @@ if ($key.Count -eq 1) {
     fileType       = 'EXE'
     silentArgs     = '-q'
     validExitCodes = @(0)
-    file           = "C:\Program Files\Visual Paradigm CE 16.3\uninstaller\uninstall.exe"
+    file           = "C:\Program Files\Visual Paradigm CE 17.1\uninstaller\uninstall.exe"
   }
  Uninstall-ChocolateyPackage @packageArgs
  }
